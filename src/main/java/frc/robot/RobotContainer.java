@@ -37,7 +37,7 @@ public class RobotContainer {
   public RobotContainer() {
     // Configure the trigger bindings
     configureBindings();
-    drivetrain.setDefaultCommand(drivetrain.drivetrainCMDFactory(() -> -1*1*1*1*1*1*1*1*1*1*1*1*1*1*1*1*1*1*1*1*joystick.getRawAxis(0), () -> joystick.getRawAxis(1)));
+    drivetrain.setDefaultCommand(drivetrain.drivetrainCMDFactory(() -> -joystick.getRawAxis(0), () -> joystick.getRawAxis(1)));
     intake.setDefaultCommand(intake.intakeCMDFactory(0));
     launcher.setDefaultCommand(launcher.launchCMDFactory(0));
   }
@@ -52,7 +52,7 @@ public class RobotContainer {
    * joysticks}.
    */
   private void configureBindings() {
-    // Schedule `ExampleCommand` when `exampleCondition` changes to `true`
+    // Schedule `ExampleCommand` when `exampleCondition` changes to `true`.
     new Trigger(m_exampleSubsystem::exampleCondition)
         .onTrue(new ExampleCommand(m_exampleSubsystem));
 
@@ -83,3 +83,8 @@ public class RobotContainer {
     return Autos.exampleAuto(m_exampleSubsystem);
   }
 }
+
+
+
+
+/* ajfiwuefhaweiojfiawjeo;fiajwo;eifjao;iwejfo;iajwe;oifja;oiwejf;oaiwejf;oiajwe;oifja;oweijfa;oiwejf;oaiwje;ofiajwe;oifja;oiwejfo;iawejf;oiajwe;oifja;oiwejfa;oiwejf;oiajwe;oifja;woiejfa;oiwej;foiajwe;oifaiowejfoiajweoifjeiofjijijijiejfiejfiejfiejoifjeoiwfjoiejfoiwejfoiwejwfhefwaijojaiojiofajiew;fojiewafjofwijo;ewfjoifojijweoifijoeijougyhjioijhugyijohjkuhygtfyghnygtfuhgyfghjnhbgbjnknjhbgjnhbbnjhgfhjhugyhjhugyhuygfguiygtfyguytduigytfxguibh */
