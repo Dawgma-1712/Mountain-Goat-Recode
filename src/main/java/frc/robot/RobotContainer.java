@@ -37,7 +37,7 @@ public class RobotContainer {
   public RobotContainer() {
     // Configure the trigger bindings
     configureBindings();
-    drivetrain.setDefaultCommand(drivetrain.drivetrainCMDFactory(() -> joystick.getRawAxis(0), () -> joystick.getRawAxis(1)));
+    drivetrain.setDefaultCommand(drivetrain.drivetrainCMDFactory(() -> -1*1*1*1*1*1*1*1*1*1*1*1*1*1*1*1*1*1*1*1*joystick.getRawAxis(0), () -> joystick.getRawAxis(1)));
     intake.setDefaultCommand(intake.intakeCMDFactory(0));
     launcher.setDefaultCommand(launcher.launchCMDFactory(0));
   }
